@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <title>Pagina Principal</title>
     <style>
@@ -15,7 +14,7 @@
       padding-top: 56px; /* Para el navbar fijo */
     }
 
- nav.navbar {
+    nav.navbar {
       background-color: #222;
       position: fixed;
       top: 0;
@@ -43,7 +42,136 @@
       border-color: #d6901d;
       background-color: transparent;
     }
+    #cuerpo {
+        padding: 20px 0;
+        background-color: #414143;
+    }
 
+    #contenidoPrincipal {
+        background-color: #414143;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    #seccion {
+        background-color: #6D6E70;
+        padding: 20px;
+        border-radius: 8px;
+        
+        
+    }
+
+    .contenido1, .contenido2, .seccion1 {
+        background-color: #414143;
+        border-radius: 8px;
+    }
+    .seccion1{
+        box-shadow: 0 0 12px #d6901d;
+        transition: all 0.3s ease; 
+    }
+
+    .seccion1:hover{
+      background-color: #e20000;
+      box-shadow: 0 0 12px #d6901d;
+      transform: scale(1.05); 
+      cursor: pointer;
+    }
+
+    .video {
+        background-color: #cb5823;
+        box-shadow: 0 0 12px #d6901d;
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+
+    .video1 {
+        background-color: #E6A235;
+        box-shadow: 0 0 12px #E6A235;
+        width: 50%;
+        height: 300px;
+        position: relative;
+    }
+
+    .pagina1 {
+        background-color: #bdbfc7;
+        height: 50px;
+        width: 50%;
+        margin: 15px 0;
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+    .parrafo1 {
+        background-color: grey;
+        width: 60%;
+        min-height: 100px;
+        padding: 15px;
+        border-radius: 4px;
+        margin-bottom: 15px;
+    }
+
+    /*Responsive de la primera página*/
+    @media (max-width: 991.98px) {
+        #contenidoPrincipal, #seccion {
+            width: 100% !important;
+        }
+        
+        .botonSecundario {
+            margin-left: 0 !important;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        .navbar-nav {
+            flex-direction: column;
+        }
+        
+        .botonPrincipal, .botonSecundario {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .video, .video1 {
+            margin-left: 0;
+        }
+        
+        .pagina1, .parrafo1 {
+            margin-left: 0;
+        }
+    }
+
+    @media (min-width: 992px) {
+        #contenidoPrincipal {
+            padding-right: 30px;
+        }
+        
+        #seccion {
+            padding-left: 30px;
+        }
+    }
+
+
+
+    /* segunda pagina*/
+    .contenidoTop{
+        background-color: #949597;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+    }
+
+    .card1{
+        background-color: red;
+        width: 100%;
+        height: 300px;
+    }
+    .imagen{
+        background-color: blueviolet;
+        width: 35%;
+        height: 300px;
+    }
     </style>
 </head>
 <body>
@@ -73,7 +201,7 @@
 </nav>
 
 <!-- Navegador barra superior -->
-<div class="navegador bg-secondary" style="height: 30px;"></div>
+<div class="navegador bg-secondary" style="height: 10px;"></div>
 
     <div class="container">
         <div id="cuerpo" class="row g-3">
